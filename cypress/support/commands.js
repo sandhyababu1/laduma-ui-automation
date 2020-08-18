@@ -4,3 +4,7 @@ Cypress.Commands.add("login", () => {
     cy.get('input[id="Password"]').type('Pass123$')
     cy.get('.btn').contains('Login').click()
 })
+
+Cypress.Commands.add("TestComment", () => {
+    console.log("Testing Framework")
+})

@@ -4,14 +4,28 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "one" : "npx cypress run --spec cypress/integration/sprint-3/*.spec.js",
+     "test": "npm run one"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babelify": "^8.0.0",
     "cypress": "^4.10.0"
   },
   "devDependencies": {
-    "cypress-select-tests": "^1.5.7"
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/node": "^7.10.5",
+    "@babel/polyfill": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "cypress-multi-reporters": "^1.4.0",
+    "cypress-select-tests": "^1.5.7",
+    "mocha": "^8.1.1",
+    "mocha-junit-reporter": "^2.0.0",
+    "mocha-multi-reporters": "^1.1.7",
+    "mochawesome": "^6.1.1",
+    "mochawesome-merge": "^4.1.0",
+    "mochawesome-report-generator": "^5.1.0"
   }
 }
