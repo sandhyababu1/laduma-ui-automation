@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run --spec cypress/integration/sprint1/*.spec.js"
+    "one" : "npx cypress run --spec cypress/integration/sprint-3/*.spec.js",
+     "test": "npm run one"
   },
   "author": "",
   "license": "ISC",

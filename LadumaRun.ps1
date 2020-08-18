@@ -11,3 +11,5 @@ Get-Content -Encoding UTF8 $ReportJson | Out-File -Encoding Unicode $ReportJson
 cmd.exe /c  $merCmd
 cmd.exe /c "npx marge mochawesome.json"
 start-process -FilePath 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe' -ArgumentList $Html
+Get-ChildItem -Path $resultDir -Include *.* -File -Recurse | foreach { $_.Delete()}
+Remove-Item -Path $ReportJson
